@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06573C592240AB590027E357 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06573C582240AB590027E357 /* ViewController2.swift */; };
+		06573C5D2240BCCF0027E357 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06573C5C2240BCCF0027E357 /* Default-568h@2x.png */; };
 		06668C292236C9CC000A228C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4C98CB1FB0D9420049D223 /* Main.storyboard */; };
 		06BA1DBB22397B4500B67A06 /* activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA1DBA22397B4500B67A06 /* activity.swift */; };
 		DA4C98C81FB0D9420049D223 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C98C71FB0D9420049D223 /* AppDelegate.swift */; };
@@ -17,7 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06573C582240AB590027E357 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = "../../../toDo 2/toDo/ViewController2.swift"; sourceTree = "<group>"; };
+		06573C582240AB590027E357 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		06573C5C2240BCCF0027E357 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		06BA1DBA22397B4500B67A06 /* activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activity.swift; sourceTree = "<group>"; };
 		DA4C98C41FB0D9420049D223 /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4C98C71FB0D9420049D223 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,8 +44,9 @@
 		DA4C98BB1FB0D9420049D223 = {
 			isa = PBXGroup;
 			children = (
+				06573C5C2240BCCF0027E357 /* Default-568h@2x.png */,
 				06BA1DBA22397B4500B67A06 /* activity.swift */,
-				DA4C98C61FB0D9420049D223 /* DropDown */,
+				DA4C98C61FB0D9420049D223 /* Habits */,
 				DA4C98C51FB0D9420049D223 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,7 +59,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DA4C98C61FB0D9420049D223 /* DropDown */ = {
+		DA4C98C61FB0D9420049D223 /* Habits */ = {
 			isa = PBXGroup;
 			children = (
 				06573C582240AB590027E357 /* ViewController2.swift */,
@@ -67,7 +70,7 @@
 				DA4C98D01FB0D9420049D223 /* LaunchScreen.storyboard */,
 				DA4C98D31FB0D9420049D223 /* Info.plist */,
 			);
-			path = DropDown;
+			path = Habits;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06668C292236C9CC000A228C /* Main.storyboard in Resources */,
+				06573C5D2240BCCF0027E357 /* Default-568h@2x.png in Resources */,
 				DA4C98D21FB0D9420049D223 /* LaunchScreen.storyboard in Resources */,
 				DA4C98CF1FB0D9420049D223 /* Assets.xcassets in Resources */,
 			);
@@ -295,7 +299,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KTNRQQ799K;
-				INFOPLIST_FILE = DropDown/Info.plist;
+				INFOPLIST_FILE = Habits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +319,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KTNRQQ799K;
-				INFOPLIST_FILE = DropDown/Info.plist;
+				INFOPLIST_FILE = Habits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
