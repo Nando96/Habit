@@ -158,7 +158,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func OUTPUT(_ sender: Any) {
-        
+        dowork()
         name = ENTRYNAME.text!
         des = Entrydis.text!
         //if !checkevents(){
@@ -201,6 +201,7 @@ class ViewController: UIViewController {
 
         
         addEventToCalendar(title: name, description: des, startDate: date1, endDate: date2 )
+        
         
     }
     
@@ -287,6 +288,34 @@ class ViewController: UIViewController {
     @IBAction func sunbutton(_ sender: Any) {
         sun.toggle()
     }
+    
+    func dowork(){
+        var titles : [String] = []
+        var startDates : [NSDate] = []
+        var endDates : [NSDate] = []
+        
+        let eventStore = EKEventStore()
+        let calendars = eventStore.calendars(for: .event)
+        
+        for calendar in calendars {
+            if calendar.title == "Calendar" {
+                
+                let oneMonthAgo = NSDate(timeIntervalSinceNow: -30*24*3600)
+                let oneMonthAfter = NSDate(timeIntervalSinceNow: +30*24*3600)
+                
+                let predicate = eventStore.predicateForEvents(withStart: oneMonthAgo as Date, end: oneMonthAfter as Date, calendars: [calendar])
+                
+                let events = eventStore.events(matching: predicate)
+                
+                for event in events {
+                    titles.append(event.title)
+                    startDates.append(event.startDate! as NSDate)
+                    endDates.append(event.endDate! as NSDate)
+                }
+            }
+        }
+        print(titles)
+    }
 }
 
 
@@ -343,8 +372,6 @@ extension Date {
     }
     
 }
-
-// MARK: Helper methods
 extension Date {
     func getWeekDaysInEnglish() -> [String] {
         var calendar = Calendar(identifier: .gregorian)
@@ -381,3 +408,4 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+

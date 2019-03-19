@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06573C592240AB590027E357 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06573C582240AB590027E357 /* ViewController2.swift */; };
 		06668C292236C9CC000A228C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4C98CB1FB0D9420049D223 /* Main.storyboard */; };
 		06BA1DBB22397B4500B67A06 /* activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA1DBA22397B4500B67A06 /* activity.swift */; };
 		DA4C98C81FB0D9420049D223 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C98C71FB0D9420049D223 /* AppDelegate.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06573C582240AB590027E357 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = "../../../toDo 2/toDo/ViewController2.swift"; sourceTree = "<group>"; };
 		06BA1DBA22397B4500B67A06 /* activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activity.swift; sourceTree = "<group>"; };
 		DA4C98C41FB0D9420049D223 /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4C98C71FB0D9420049D223 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 		DA4C98C61FB0D9420049D223 /* DropDown */ = {
 			isa = PBXGroup;
 			children = (
+				06573C582240AB590027E357 /* ViewController2.swift */,
 				DA4C98C71FB0D9420049D223 /* AppDelegate.swift */,
 				DA4C98C91FB0D9420049D223 /* ViewController.swift */,
 				DA4C98CB1FB0D9420049D223 /* Main.storyboard */,
@@ -147,6 +150,7 @@
 				DA4C98CA1FB0D9420049D223 /* ViewController.swift in Sources */,
 				DA4C98C81FB0D9420049D223 /* AppDelegate.swift in Sources */,
 				06BA1DBB22397B4500B67A06 /* activity.swift in Sources */,
+				06573C592240AB590027E357 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
